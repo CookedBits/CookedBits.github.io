@@ -5,43 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cooked Bits</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
             background-color: #0D0D0D;
             color: #FFFFFF;
-            font-family: monospace;
+            font-family: 'Courier New', monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
             text-align: center;
             padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background-color: #121212;
+            border: 1px solid #808080;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #808080;
         }
         img {
             border-radius: 50%;
             width: 150px;
             height: 150px;
             border: 3px solid #FFFFFF;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1rem;
+            color: #B0B0B0;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
         }
         a {
             color: #FFFFFF;
             text-decoration: none;
-            display: block;
-            padding: 10px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 20px;
+            margin: 5px;
             border: 1px solid #808080;
             border-radius: 5px;
-            margin: 5px auto;
-            width: 200px;
             background-color: #1A1A1A;
-            transition: background 0.3s;
+            width: 200px;  /* Fixed width */
+            height: 50px;  /* Fixed height */
+            transition: background 0.3s, transform 0.2s;
+            text-align: center;
         }
         a:hover {
-            text-decoration: underline;
             background-color: #333333;
-        }
-        .container {
-            max-width: 600px;
-            margin: auto;
-            border: 1px solid #808080;
-            padding: 20px;
-            border-radius: 10px;
-            background-color: #121212;
-            box-shadow: 0 0 10px #808080;
+            text-decoration: underline;
+            transform: scale(1.05);
         }
     </style>
 </head>
@@ -53,10 +81,11 @@
         <h2>Links</h2>
         <div>
             <a href="https://github.com/CookedBits" target="_blank">GitHub</a>
-            <a href="https://x.com/CookedBits" target="_blank">Twitter</a>
+            <a href="https://x.com/CookedBits" target="_blank">Twitter/X</a>
             <a href="https://www.instagram.com/cookedbits/" target="_blank">Instagram</a>
             <a href="https://www.youtube.com/@CookedBits" target="_blank">YouTube</a>
         </div>
     </div>
 </body>
 </html>
+
